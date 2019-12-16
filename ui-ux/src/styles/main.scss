@@ -1,0 +1,55 @@
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
+
+@import 'base/color';
+@import 'base/fonts';
+@import 'base/reset';
+@import 'base/grid';
+@import 'base/global';
+@import 'base/utilities';
+
+@import 'pages/_layout/header';
+@import 'pages/_layout/footer';
+@import 'pages/_layout/breadcrumb';
+@import 'pages/_layout/pagination';
+@import 'pages/_layout/back-to-top';
+
+// BANNER
+@import "pages/_components/banner/b-1";
+
+// ABOUT
+@import "pages/_components/about/a-1";
+
+// HOT EVENT
+@import "pages/_components/hot-event/h-1";
+
+// CATALOG EVENT
+@import "pages/_components/catalog-event/c-1";
+
+// NEWS
+@import "pages/_components/news/n-1";
+@import "pages/_components/news/n-2";
+
+// Login & Register
+@import "pages/_components/login-register/login";
+@import "pages/_components/login-register/register";
+@import "pages/_components/login-register/admin-login";
+
+// SEARCH
+@import "pages/_components/search/s-1";
+
+// CLIENTS AND PARTNER
+@import "pages/_components/clients-partner/cp-1";
+
+// FORM ADD SỰ KIỆN
+@import "pages/_components/form-add-event/f-1";
+
+// PRODUCT
+@import "pages/_components/product/product-detail";
+@import "pages/_components/product/list-product";
+
+// BOOKING
+@import "pages/_components/booking/booking";
+
+//USER
+@import "pages/_components/user/user.scss";

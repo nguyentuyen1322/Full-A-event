@@ -1,0 +1,46 @@
+.search {
+	padding-bottom: 700px;
+
+	.form-group {
+		margin-top : 100px;
+		font-family: 'Anton', sans-serif;
+		color      : $main-color-3;
+		text-align : center;
+
+		label {
+			cursor        : pointer;
+			font-size     : 20px;
+			font-weight   : 400;
+			letter-spacing: 3px;
+			margin-bottom : 50px;
+		}
+
+		input[type="text"] {
+			width     : 100%;
+			font-size : 100px;
+			border    : none;
+			background: none;
+			color     : $main-color-3;
+			text-align: center;
+			padding   : 0 50px;
+		}
+	}
+
+	.ket-qua-tim-kiem {
+		margin-top: 150px;
+
+		.so-luong-ket-qua {
+			text-align   : right;
+			margin-bottom: 20px;
+
+			span {
+				padding-left: 10px;
+				color       : $main-color-1;
+			}
+		}
+
+		.item-event {
+			margin-bottom: 30px;
+		}
+	}
+}

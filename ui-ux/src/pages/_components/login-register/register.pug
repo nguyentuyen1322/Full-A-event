@@ -1,0 +1,67 @@
+section.register
+	.container
+		.box-register
+			ul.menu-login-register
+				li.item
+					a(href="dang-nhap.html") ĐĂNG NHẬP
+				li.item.active
+					a(href="dang-ky.html") ĐĂNG KÍ
+			.box-form-register
+				form(action="dang-nhap.html")
+					.form-row
+						.form-group.col-lg-12
+							label(for="email") Email *
+							.form-input
+								input#email(type="text" placeholder="Địa chỉ email *")
+								span.error Bắt lỗi
+						.form-group.col-lg-12
+							label(for="user-name") Tài khoản *
+							.form-input
+								input#user-name(type="text" placeholder="Tên tài khoản *")
+								span.error Bắt lỗi
+						.form-group.col-lg-12
+							label(for="pass") Mật khẩu *
+							.form-input
+								input#pass(type="password", placeholder="Mật khẩu *")
+								span.error Bắt lỗi
+						.form-group.col-lg-12
+							label(for="repass") Nhập lại mật khẩu *
+							.form-input
+								input#repass(type="password", placeholder="Nhập lại mật khẩu *")
+								span.error Bắt lỗi
+						.form-group.col-lg-12
+							label(for="address") Số điện thoại *
+							.form-input
+								input#address(type="phone", placeholder="Số điện thoại")
+								span.error Bắt lỗi
+						.form-group.col-lg-12
+							label(for="address") Địa chỉ
+							.form-input
+								input#address(type="text", placeholder="Địa chỉ")
+								span.error Bắt lỗi
+					.form-row
+						.form-group.col-lg-6
+							label(for="address") Ngày sinh *
+							.form-input
+								input(type="date")
+						.form-group.col-lg-6
+							label(for="address") Giới tính *
+							.form-input
+								label.check-box(for="nam") Nam
+								input#nam(type="radio", name="gender", checked)
+								label.check-box(for="nu") Nữ
+								input#nu(type="radio", name="gender")
+						.form-group.col-lg-6
+							label.choose-file(for="file-avatar") Chọn ảnh đại diện
+							.form-input
+								input#file-avatar(type="file" hidden)
+							p Details of goods: Quantity/G.W/Goods/FileName
+						.form-group.col-lg-6
+							.form-input
+								select#vip(name="")
+									option(value="") Normal
+									option(value="") V.I.P
+						.form-group.col-lg-12
+							P To learn more about how Music.com collects, uses, shares and protects your personal data please read our full Privacy Policy.
+							p To learn more about how Music.com collects, uses, shares and protects your personal data please read our full Privacy Policy.
+					button.btn ĐĂNG KÝ

@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>A Event | Chi Tiết Sự Kiện</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<style>#loading{-webkit-transition:1.5s;-o-transition:1.5s;position:fixed;top:0;right:0;bottom:0;left:0;z-index:99999;transition:1.5s;background:#000;width:100%;height:100%}#loading #progress{-webkit-transition:1.5s;-o-transition:1.5s;display:none;transition:1.5s;background:#000;width:0;height:1px}#loading #progress,#loading .progstat-wrapper{-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);position:absolute;top:50%;transform:translateY(-50%)}#loading .progstat-wrapper{margin-top:0;width:100%;color:#fff;font-size:14px;font-weight:300;letter-spacing:3px;text-align:center}#loading .logo-loader{-webkit-transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%);position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);margin-top:-100px;width:150px;height:150px}</style>
+		<script>!function(){function n(n){return document.getElementById(n)}document.addEventListener("DOMContentLoaded",function(){var e=n("loading"),t=n("progress"),o=n("progstat"),r=document.images,i=0,d=r.length;if(0==d)return u();function a(){var n=100/d*(i+=1)<<0;if(t.style.width=n,o.innerHTML=n,i===d)return u()}function u(){e.style.opacity=0,setTimeout(function(){e.style.display="none";var n=document.getElementById("loading");n.parentNode.removeChild(n)},1500)}for(var c=0;c<d;c++){var s=new Image;s.onload=a,s.onerror=a,s.src=r[c].src}},!1)}();</script>
+		<link rel="stylesheet" href="./css/core.min.css">
+		<link rel="stylesheet" href="./css/main.min.css"><link href="https://fonts.googleapis.com/css?family=K2D&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Pangolin&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<div id="loading">
+			<div class="logo-loader"><img src="./images/icons/loading.gif" alt=""></div>
+			<div class="progstat-wrapper">Loading: <span id="progstat">0</span>%</div>
+			<div id="progress"></div>
+		</div>
+		<header>
+			<div class="container">
+				<div class="row">
+					<div class="left-menu">
+						<div class="logo"><a href="index.html"><img src="./images/logo.png" alt=""></a></div>
+					</div>
+					<div class="add-event"><a href="form-dang-sk.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25" class="sc-ckVGcZ cRPCZL"><g fill="none" fill-rule="evenodd"><circle id="oval-plus" class="sc-dxgOiQ kSEybs" stroke-width="2" cx="12" cy="12" r="11"></circle><path d="M6,12 L18,12" id="Line" class="sc-dxgOiQ kSEybs" stroke-width="2" stroke-linecap="square"></path><path d="M12,6 L12,18" id="Line2" class="sc-dxgOiQ kSEybs" stroke-width="2" stroke-linecap="square"></path></g></svg><span>ADD A EVENT</span></a></div>
+					<div class="right-menu">
+						<div class="button-login"><a href="dang-nhap.html"><svg class="sc-eNPDpu cjclFo" xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26"><g transform="translate(1 1)" stroke="#fff" stroke-width="2" fill="none"><circle cx="12" cy="12" r="12"></circle><path d="M15.65 6.78a3.56 3.56 0 0 0-3.5-3.65H12a3.56 3.56 0 0 0-3.65 3.5v.15c0 .42.42 2.45.42 2.45.3 1.78 1.46 3.3 3.23 3.3s2.92-1.47 3.23-3.3c0 0 .42-2.03.42-2.45zM3.13 20.09v-.37c0-1.62 1.2-2.82 2.82-3.23l6.05-1.1 6.1 1.15c1.57.47 2.77 1.56 2.77 3.23v.37"></path></g></svg><span>Login</span></a></div>
+						<div class="avatar">
+							<figure>
+								<div class="box-img"><img class="ofc" src="https://scontent.fsgn5-4.fna.fbcdn.net/v/t1.0-9/56446500_806542706382160_330506997671657472_n.jpg?_nc_cat=104&amp;_nc_oc=AQkJPyas19gTNCr6eI_T0vLLSNDj5RdUX2WpIxDmu0BWtBY6RTU8ALdFpub_xZEq9ts&amp;_nc_ht=scontent.fsgn5-4.fna&amp;oh=7e444b18b75f6dce936da9eed8f6778b&amp;oe=5E1AD9DB" alt=""></div>
+								<figcaption>
+									<h5>HOÀNG VIỆT HÙNG</h5>
+								</figcaption>
+							</figure>
+							<div id="sub-information">
+								<div class="close"><svg width="26" height="24" xmlns="http://www.w3.org/2000/svg"><g><rect fill="none" id="canvas_background" height="26" width="28" y="-1" x="-1"/></g><g><path fill="#91918e" stroke="null" id="svg_2" d="m13.475695,0.194444c-6.483507,0 -11.788195,5.304688 -11.788195,11.788195c0,6.483507 5.304688,11.788195 11.788195,11.788195s11.788195,-5.304688 11.788195,-11.788195c0,-6.483507 -5.304688,-11.788195 -11.788195,-11.788195zm5.776215,15.914063l-1.650347,1.650347l-4.125868,-4.125868l-4.125868,4.125868l-1.650347,-1.650347l4.125868,-4.125868l-4.125868,-4.125868l1.650347,-1.650347l4.125868,4.125868l4.125868,-4.125868l1.650347,1.650347l-4.125868,4.125868l4.125868,4.125868z"/></g></svg></div>
+								<figure>
+									<div class="box-img"><img class="ofc" src="https://scontent.fsgn5-4.fna.fbcdn.net/v/t1.0-9/56446500_806542706382160_330506997671657472_n.jpg?_nc_cat=104&amp;_nc_oc=AQkJPyas19gTNCr6eI_T0vLLSNDj5RdUX2WpIxDmu0BWtBY6RTU8ALdFpub_xZEq9ts&amp;_nc_ht=scontent.fsgn5-4.fna&amp;oh=7e444b18b75f6dce936da9eed8f6778b&amp;oe=5E1AD9DB" alt=""></div>
+									<figcaption>
+										<h5>HOÀNG VIỆT HÙNG<span>V.I.P</span></h5><a href="#">Logout</a>
+									</figcaption>
+								</figure>
+								<ul class="list-item"><a href="form-dang-sk.html">
+										<li class="item">Thêm sự kiện mới</li></a><a href="su-kien-da-tao.html">
+										<li class="item">Sự kiện đã tạo</li></a><a href="thong-tin-tai-khoan.html">
+										<li class="item">Thông tin tài khoản</li></a><a href="#">
+										<li class="item">Đăng xuất</li></a></ul>
+							</div>
+						</div>
+						<div class="button-search"><a href="tim-kiem.html"><svg width="26" height="26" xmlns="http://www.w3.org/2000/svg"><g><rect fill="none" id="canvas_background" height="28" width="28" y="-1" x="-1"/></g><g><g stroke="null" id="svg_8"><path fill="#ffffff" stroke="null" id="svg_4" d="m23.537278,25.717651c-0.574281,0 -1.148562,-0.255236 -1.595225,-0.63809l-7.018988,-7.018988c-0.255236,-0.255236 -0.255236,-0.63809 0,-0.893326s0.63809,-0.255236 0.893326,0l7.018988,7.018988c0.382854,0.382854 1.020944,0.382854 1.339989,0c0.382854,-0.382854 0.382854,-1.020944 0,-1.339989l-7.018988,-7.018988c-0.255236,-0.255236 -0.255236,-0.63809 0,-0.893326s0.63809,-0.255236 0.893326,0l7.018988,7.018988c0.893326,0.893326 0.893326,2.297123 0,3.190449c-0.382854,0.319045 -0.957135,0.574281 -1.531416,0.574281z"/><g stroke="null" id="svg_7"><path fill="#ffffff" stroke="null" id="svg_2" d="m10.073583,19.911034c-5.423763,0 -9.826583,-4.40282 -9.826583,-9.826583s4.40282,-9.890392 9.826583,-9.890392s9.890392,4.466629 9.890392,9.890392c0,0.765708 -0.063809,1.531416 -0.255236,2.297123c-0.063809,0.319045 -0.446663,0.574281 -0.765708,0.446663c-0.319045,-0.063809 -0.574281,-0.446663 -0.446663,-0.765708c0.127618,-0.63809 0.255236,-1.27618 0.255236,-1.978078c0,-4.721865 -3.828539,-8.614213 -8.614213,-8.614213s-8.614213,3.892348 -8.614213,8.614213s3.828539,8.614213 8.614213,8.614213c0.701899,0 1.339989,-0.063809 2.041887,-0.255236c0.319045,-0.063809 0.701899,0.127618 0.765708,0.446663c0.063809,0.319045 -0.127618,0.701899 -0.446663,0.765708c-0.829517,0.191427 -1.595225,0.255236 -2.424741,0.255236z"/><path fill="#ffffff" stroke="null" id="svg_6" d="m10.073583,17.422483c-4.019966,0 -7.338033,-3.318067 -7.338033,-7.338033s3.318067,-7.338033 7.338033,-7.338033s7.338033,3.318067 7.338033,7.338033s-3.254258,7.338033 -7.338033,7.338033zm0,-13.399886c-3.318067,0 -6.061853,2.743786 -6.061853,6.061853s2.743786,6.061853 6.061853,6.061853s6.061853,-2.743786 6.061853,-6.061853s-2.679977,-6.061853 -6.061853,-6.061853z"/></g></g></g></svg></a></div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main>
+			<section class="product-detail">
+				<div class="banner-event">
+					<figure><img class="ofc" src="./images/banner/5.png" alt="" srcset=""></figure>
+				</div>
+				<div class="main-intro">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-8">
+								<div class="overview">
+									<h1 class="wow fadeInLeft" data-wow-delay=".3s">Chill cùng Đen Vâu</h1>
+									<div class="item time wow fadeInLeft" data-wow-delay=".6s">Thứ 7, 09 Tháng 11 2019 (08:00 PM - 11:00 PM)</div>
+									<div class="item address wow fadeInLeft" data-wow-delay=".9s">Nhà thi đấu Quân khu 7 202 Hoàng Văn Thụ, Phường 9, Quận Phú Nhuận, Thành Phố Hồ Chí Minh</div>
+								</div>
+								<div class="details-event">
+									<div class="desc">
+										<div class="title">GIỚI THIỆU</div>
+										<div class="CKEditor">
+											<p class="text-center color-red">[Vé sẽ được chính thức mở bán vào lúc 8h tối ngày 18/10/2019]</p>
+											<p>Đen Vâu - cái tên hẳn đã không còn xa lạ với những người yêu thích dòng nhạc Rap/Indie ở Việt Nam. Rap của Đen thường đi sâu vào những tâm tư "ai cũng có nhưng khó-miêu-tả" của đa số người trẻ nên luôn nhận được sự đồng cảm và đón nhận rất lớn. Những câu rap của Đen nghe thì rất bình dị gần gũi, nhưng lại là sự chắt lọc kỹ lưỡng đến từng câu chữ và ý tứ. Đen luôn mong muốn bằng âm nhạc của mình có thể truyền được cảm hứng sống tích cực và tinh thần lạc quan, yêu đời đến người nghe.</p>
+											<p>Show của Đen là liveshow đầu tiên trong sự nghiệp, đánh dấu cột mốc 10 năm theo đuổi con đường âm nhạc của Đen. Đây cũng là lời cảm ơn chân thành nhất mà Đen muốn dành tặng đến những Đồng âm đã luôn theo dõi và ủng hộ mình suốt thời gian qua.</p>
+											<p>Hãy đến để cùng Đen nhìn lại chặng đường 10 năm đã qua, và chờ đón những điều thật đặc biệt!</p>
+											<p class="color-red">Lưu ý: Trên mỗi đơn hàng, quý khách được đặt tối đa 2 vé và vé sẽ không được đổi trả vì bất kỳ lý do nào.</p>
+											<p class="color-red">Vì lý do bảo trì, nên khách hàng sử dụng hình thức thanh toán Internet Banking qua thẻ ATM của Ngân hàng Đông Á sẽ không thực hiện được trong thời gian này. Quý khách vui lòng sử dụng tài khoản ngân hàng khác để có thể đặt được vé.</p>
+											<p>Sơ đồ chỗ ngồi:</p>
+											<figure><img class="ofc" src="./images/product/product-detail.png" alt="" srcset=""></figure>
+										</div>
+									</div>
+									<div class="ticket-booking">
+										<div class="title">THÔNG TIN VÉ</div>
+										<div class="list-ticket wow fadeInDown" data-wow-delay=".3s">
+											<div class="item">
+												<div class="name">HẠNG A</div>
+												<div class="price">400.000 VND</div>
+												<div class="info-ticket">
+													<p>Vị trí:<span>Ghế ngồi trên khán đài A</span></p>
+													<p> Quà tặng (sẽ nhận tại sự kiện):<span>Nón</span></p>
+													<p>Lưu ý:<span>Trên mỗi đơn hàng, quý khách được đặt tối đa 2 vé</span></p>
+												</div>
+											</div>
+											<div class="item">
+												<div class="name">HẠNG B</div>
+												<div class="price">800.000 VND</div>
+												<div class="info-ticket">
+													<p>Vị trí:<span>Ghế ngồi trên khán đài A</span></p>
+													<p> Quà tặng (sẽ nhận tại sự kiện):<span>Nón</span></p>
+													<p>Lưu ý:<span>Trên mỗi đơn hàng, quý khách được đặt tối đa 2 vé</span></p>
+												</div>
+											</div>
+											<div class="item">
+												<div class="name">HẠNG C</div>
+												<div class="price">1.600.000 VND</div>
+												<div class="info-ticket">
+													<p>Vị trí:<span>Ghế ngồi trên khán đài A</span></p>
+													<p> Quà tặng (sẽ nhận tại sự kiện):<span>Nón</span></p>
+													<p>Lưu ý:<span>Trên mỗi đơn hàng, quý khách được đặt tối đa 2 vé</span></p>
+												</div>
+											</div>
+											<div class="item">
+												<div class="name">HẠNG D</div>
+												<div class="price">2.000.000 VND</div>
+												<div class="info-ticket">
+													<p>Vị trí:<span>Ghế ngồi trên khán đài A</span></p>
+													<p> Quà tặng (sẽ nhận tại sự kiện):<span>Nón</span></p>
+													<p>Lưu ý:<span>Trên mỗi đơn hàng, quý khách được đặt tối đa 2 vé</span></p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="gmap">
+										<div class="title">BẢN ĐỒ</div>
+										<div class="google-map">
+											<div id="map"></div>
+										</div>
+										<script>
+											var locationsObject = {
+												inputLocations : [
+													{
+														lat: 10.807100,
+														lng: 106.661638,
+														name: 'Ho Chi Minh Headoffice',
+														icon: "./images/icons/gmap.svg",
+														address: 'Floor 4, Thang Long Building, 29 Thang Long St., Ward 4,  Tan Binh Dist., HCMC, Vietnam.',
+														hotLine: '(+84) 903 910 430 - Mr.Linh',
+														phone: '(84.28) 3848 7858',
+														fax: '(84.28) 3848 7858',
+														email: 'npv-saleadmin@npvexpress.com',
+														website: 'www.npvexpress.com',
+														optimized: false
+													}
+												],
+											}
+										</script>
+									</div>
+									<div class="organizer">
+										<div class="title">NHÀ TỔ CHỨC</div>
+										<div class="content wow fadeInDown" data-wow-delay=".3s">
+											<div class="org-img"><img class="ofc" src="./images/product/organizer.png" alt="" srcset=""></div>
+											<div class="desc">
+												<p>Grab và Yeah1 Network phối hợp tổ chức chương trình.</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-4 aside-boxing">
+								<div class="box-booking"><a class="btn wow flipInX" href="dat-ve-buoc-1.html" data-wow-delay=".5s">MUA VÉ NGAY</a>
+									<div class="overview">
+										<h1>Chill cùng Đen Vâu</h1>
+										<div class="item time">Thứ 7, 09 Tháng 11 2019 (08:00 PM - 11:00 PM)</div>
+										<div class="item address">Nhà thi đấu Quân khu 7 202 Hoàng Văn Thụ, Phường 9, Quận Phú Nhuận, Thành Phố Hồ Chí Minh</div>
+										<div class="item price">Từ 400.000 VND</div>
+									</div>
+									<div class="facebook-button">
+										<div class="item">
+											<div class="button fb-share-button" data-href="https://aevent.web404.xyz/" data-layout="button" data-size="large"></div><a class="fb-xfbml-parse-ignore" target="_blank" href="https://aevent.web404.xyz/"></a>
+										</div>
+										<div class="item">
+											<div class="button fb-save" data-uri="https://www.instagram.com/facebook/" data-size="large"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer>
+			<div class="container">
+				<div class="row list-info-company">
+					<div class="col-lg-6">
+						<h5>HOGASH STUDIOS</h5>
+						<p>Were a full-service digital agency that believes being a Favorite brand is more valuable than just being a Famous one. We craft beautifully useful, connected ecosystems that grow businesses and build enduring relationships between brands and humans.</p>
+					</div>
+					<div class="col-lg-2 col-md-4">
+						<h5>COMPANY</h5>
+						<ul class="list-item-footer">
+							<li class="item-footer"><a href="#">Our Blog</a></li>
+							<li class="item-footer"><a href="#">Instagram</a></li>
+							<li class="item-footer"><a href="#">Snapchat</a></li>
+							<li class="item-footer"><a href="#">Facebook</a></li>
+							<li class="item-footer"><a href="#">Twitter</a></li>
+							<li class="item-footer"><a href="#">Dribbble</a></li>
+						</ul>
+					</div>
+					<div class="col-lg-2 col-md-4">
+						<h5>MEMBER</h5>
+						<ul class="list-item-footer">
+							<li class="item-footer"><a href="#">Home</a></li>
+							<li class="item-footer"><a href="#">About</a></li>
+							<li class="item-footer"><a href="#">Pricing</a></li>
+							<li class="item-footer"><a href="#">Blog</a></li>
+							<li class="item-footer"><a href="#">Services</a></li>
+							<li class="item-footer"><a href="#">Shop</a></li>
+						</ul>
+					</div>
+					<div class="col-lg-2 col-md-4">
+						<h5>FOLLOW</h5>
+						<ul class="list-item-footer">
+							<li class="item-footer"><a href="#">Account</a></li>
+							<li class="item-footer"><a href="#">Billing</a></li>
+							<li class="item-footer"><a href="#">Membership</a></li>
+							<li class="item-footer"><a href="#">Receipt</a></li>
+							<li class="item-footer"><a href="#">Invoice</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="coppy-right">
+					<h3>@ 2020 <a href="https://www.facebook.com/hoangviet.hung.009"><span>A EVENT | ALL COPYRIGHT BY A EVENT</span></a></h3>
+					<p>This is Project of Hùng, Tuyến, Huy, Sơn.</p>
+				</div>
+			</div>
+		</footer>
+		<div id="fb-root"></div>
+		<script>
+			window.fbAsyncInit = function() {
+			FB.init({
+			xfbml            : true,
+			version          : 'v4.0'
+			});
+			};
+			(function(d, s, id) {
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id)) return;
+			js = d.createElement(s); js.id = id;
+			js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+			fjs.parentNode.insertBefore(js, fjs);
+			}(document, 'script', 'facebook-jssdk'));
+		</script>
+		<div class="fb-customerchat" attribution="setup_tool" page_id="117903549608295" theme_color="#ffc300" logged_in_greeting="A Event xin chào, chúng tôi giúp gì được cho bạn ?" logged_out_greeting="A Event xin chào, chúng tôi giúp gì được cho bạn ?"></div>
+		<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?&amp;key=AIzaSyCHvmyTralDp2Y0m7zEiN185u1vtArcC5s&amp;libraries=places"></script>
+		<script type="text/javascript" src="./js/core.min.js"></script>
+		<script type="text/javascript" src="./js/main.min.js"></script>
+	</body>
+</html>

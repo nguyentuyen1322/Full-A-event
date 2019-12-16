@@ -1,0 +1,32 @@
+.catalog-event {
+	.catalog-wrapper {
+		overflow     : hidden;
+		padding      : 50px 0;
+		border-bottom: 1px solid #323637;
+
+		.slider-ProductByCatalog {
+			position  : relative;
+			margin-top: 30px;
+			overflow  : hidden;
+
+			.swiper-button-prev {
+				background-image: url(../images/icons/prev-slider.svg);
+				background-size : cover;
+				transition      : .2s all ease-in-out;
+			}
+
+			.swiper-button-next {
+				background-image: url(../images/icons/next-slider.svg);
+				background-size : cover;
+				transition      : .2s all ease-in-out;
+			}
+
+			.swiper-button-next,
+			.swiper-button-prev {
+				&:hover {
+					transform: scale(1.2);
+				}
+			}
+		}
+	}
+}

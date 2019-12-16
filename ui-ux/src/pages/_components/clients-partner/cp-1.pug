@@ -1,0 +1,32 @@
+section.clients-partner
+	.container
+		.row
+			.col-lg-4.left-item.wow.fadeIn(data-wow-delay=".3s")
+				figure
+					a(href="index.html")
+						img(src="./images/logo.png", alt="")
+					figcaption
+						h3 A Event là gì ???
+						p A Event là hệ thống quản lý và phân phối vé trực tuyến, giúp việc mua bán vé sự kiện của bạn thật tiện lợi và dễ dàng.
+			.col-lg-8.right-item
+				.tab-container
+					ul.list-tab
+						li.item.wow.fadeInLeft(data-wow-delay=".3s" toggle-for="item-1").acitve ĐỐI TÁC TIÊU BIỂU
+						li.item.wow.fadeInLeft(data-wow-delay=".6s" toggle-for="item-2") KHÁCH HÀNG TIÊU BIỂU
+						li.item.wow.fadeInLeft(data-wow-delay=".9s" toggle-for="item-3") NHẬN XÉT CỦA ĐỐI TÁC
+					.tab-content
+						.content(tab-id="item-1")
+							.list-img
+								-for(i=1;i<5;i++)
+									.item
+										a(href="https://asialive365.com/")
+											img(src="./images/clients-partner/doi-tac-"+i+".png", alt="", srcset="")
+						.content(tab-id="item-2")
+							.list-img
+								-for(i=1;i<7;i++)
+									.item
+										a(href="http://mtvwe.com/")
+											img(src="./images/clients-partner/khach-hang-"+i+".png", alt="")
+						.content(tab-id="item-3")
+							p NHẬN XÉT CỦA KHÁCH HÀNG
+

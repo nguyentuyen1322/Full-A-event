@@ -1,0 +1,77 @@
+section.list-product
+	.banner-search
+		figure
+			img.ofc(src="./images/banner/search-banner.png", alt="")
+		form(action="#")
+			.form-group
+				input(type="text" placeholder="Tìm sự kiện, khóa học, khu vui chơi...")
+	.box-filter
+		.container
+			form(action="#")
+				.form-row.no-gutters
+					.form-group.col-lg-3
+						select(name="")
+							option(value="") Tất cả địa điểm
+							option(value="") Hồ Chí Minh
+							option(value="") Hà Nội
+							option(value="") Các địa điểm khác
+					.form-group.col-lg-3
+						select(name="")
+							option -- Thể loại sự kiện --
+							optgroup(label="Giải trí")
+								option Thể loại 1
+								option Thể loại 2
+								option Thể loại 3
+								option Thể loại 4
+								option Thể loại 5
+								option Thể loại 6
+							optgroup(label="Học Tập")
+								option Thể loại 1
+								option Thể loại 2
+								option Thể loại 3
+								option Thể loại 4
+								option Thể loại 5
+								option Thể loại 6
+							optgroup(label="Khác")
+								option Thể loại 1
+								option Thể loại 2
+								option Thể loại 3
+								option Thể loại 4
+								option Thể loại 5
+								option Thể loại 6
+					.form-group.col-lg-3
+						select(name="")
+							option Tất cả các ngày sắp tới
+							option Hôm nay
+							option Ngày mai
+							option Tuần này
+					.form-group.col-lg-3
+						select(name="")
+							option Tất cả giá vé
+							option Miễn phí
+							option Có phí
+	.list-item
+		.container
+			.row
+				-for(i=1;i<15;i++)
+					.col-lg-4
+						a(href="chi-tiet-su-kien.html")
+							.item-event
+								figure
+									.box-img
+										img.ofc(src="./images/product/"+i+".jpg", alt="", srcset="") 
+									figcaption
+										h3 TÊN CỦA SỰ KIỆN
+										.info-event
+											.item
+												h5 Từ:
+													span 1.500.000 VND
+											.item
+												h5 Địa chỉ:
+													span Hồ Chí Minh
+											.item
+												h5 Thời gian:
+													span 12.12.2019
+											.item
+												h5 Trạng thái:
+													span Mở bán

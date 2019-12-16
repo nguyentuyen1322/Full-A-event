@@ -1,0 +1,296 @@
+.booking-step-1 {
+
+	nav {
+		ul {
+			display   : flex;
+			flex-wrap : wrap;
+			text-align: center;
+
+			li {
+				position   : relative;
+				flex       : 0 0 33.3333333333%;
+				max-width  : 33.3333333333%;
+				line-height: 100px;
+
+				&.active {
+					color: $main-color-1;
+				}
+
+				&.checked {
+					&:before {
+						content         : '';
+						position        : absolute;
+						top             : 50%;
+						transform       : translateY(-50%);
+						left            : 100px;
+						background-image: url(../images/icons/checked-step-booking.svg);
+						width           : 32px;
+						height          : 32px;
+					}
+				}
+
+				&:last-child {
+					&:after {
+						content: none;
+					}
+				}
+
+				&:after {
+					content         : '';
+					position        : absolute;
+					top             : 50%;
+					transform       : translateY(-50%);
+					right           : 0;
+					background-image: url(../images/icons/arrow-step-booking.svg);
+					width           : 32px;
+					height          : 32px;
+				}
+			}
+		}
+	}
+
+	.box-price {
+		background   : $main-color-4;
+		border-radius: 10px;
+		padding      : 20px 0;
+
+		.title-box {
+			display        : flex;
+			justify-content: center;
+
+			h3 {
+				position: relative;
+				padding : 0 20px 20px;
+
+				&:after {
+					content      : '';
+					position     : absolute;
+					width        : 50%;
+					height       : 1px;
+					border-bottom: 2px dotted $main-color-2;
+					bottom       : 0;
+					left         : 50%;
+					transform    : translateX(-50%);
+				}
+			}
+
+			a {
+				position    : relative;
+				padding-left: 30px;
+
+				&:after {
+					content         : '';
+					position        : absolute;
+					width           : 24px;
+					height          : 24px;
+					left            : 0;
+					top             : 0;
+					background-image: url(../images/icons/edit.svg);
+				}
+			}
+		}
+
+		table {
+			width: 100%;
+
+			tr {
+				border-bottom: 2px dotted $main-color-2;
+
+				th,
+				td {
+					padding: 20px;
+
+					&:nth-child(2) {
+						text-align: right;
+					}
+				}
+
+				&:last-child {
+					font-weight: 700;
+
+					td {
+						&:first-child {
+							color: $main-color-1;
+						}
+					}
+				}
+			}
+
+
+
+			thead {
+				th {
+					color: $main-color-1;
+				}
+			}
+		}
+
+		.btn {
+			width : 50%;
+			margin: 50px auto 0;
+		}
+	}
+
+	.booking {
+		padding: 50px 0;
+
+		.choose-tickets {
+			table {
+				width: 100%;
+
+				th,
+				td {
+
+					&:nth-child(1) {
+						width: 50%;
+					}
+
+					&:nth-child(2),
+					&:nth-child(3) {
+						width: 25%;
+					}
+				}
+
+				thead {
+					th {
+						color        : $main-color-1;
+						padding      : 20px;
+						border-bottom: 1px solid rgba($color: #ffd800, $alpha: .5);
+					}
+				}
+
+				tbody {
+					tr {
+						&:nth-child(2n) {
+							background: rgba($color: $main-color-4, $alpha: .7);
+						}
+
+						&:nth-child(2n+1) {
+							background: $main-color-4;
+						}
+					}
+
+					td {
+						padding: 20px;
+
+						.quantity {
+							position: relative;
+						}
+
+						input[type=number]::-webkit-inner-spin-button,
+						input[type=number]::-webkit-outer-spin-button {
+							-webkit-appearance: none;
+							margin            : 0;
+						}
+
+						input[type=number] {
+							-moz-appearance: textfield;
+						}
+
+						.quantity input {
+							width       : 100%;
+							height      : 42px;
+							line-height : 1.65;
+							float       : left;
+							display     : block;
+							padding     : 0;
+							margin      : 0;
+							padding-left: 20px;
+							border      : 1px solid #eee;
+						}
+
+						.quantity input:focus {
+							outline: 0;
+						}
+
+						.quantity-nav {
+							float   : left;
+							position: relative;
+							height  : 41px;
+						}
+
+						.quantity-button {
+							position           : relative;
+							cursor             : pointer;
+							border-left        : 1px solid #eee;
+							width              : 20px;
+							text-align         : center;
+							color              : #333;
+							font-size          : 13px;
+							font-family        : "Trebuchet MS", Helvetica, sans-serif !important;
+							line-height        : 1.7;
+							-webkit-transform  : translateX(-100%);
+							transform          : translateX(-100%);
+							-webkit-user-select: none;
+							-moz-user-select   : none;
+							-ms-user-select    : none;
+							-o-user-select     : none;
+							user-select        : none;
+						}
+
+						.quantity-button.quantity-up {
+							position     : absolute;
+							height       : 50%;
+							top          : 0;
+							border-bottom: 1px solid #eee;
+						}
+
+						.quantity-button.quantity-down {
+							position: absolute;
+							bottom  : -1px;
+							height  : 50%;
+						}
+
+
+					}
+				}
+			}
+		}
+
+		.buyer-info {
+			.form-row {
+				margin: 0 -15px;
+			}
+
+			.title-box {
+				margin-bottom: 50px;
+
+				h3 {
+					display       : inline-block;
+					position      : relative;
+					font-size     : 24px;
+					padding-bottom: 20px;
+
+					&::after {
+						content   : '';
+						position  : absolute;
+						width     : 35%;
+						height    : 1px;
+						bottom    : 0;
+						left      : 0;
+						background: $main-color-1;
+					}
+				}
+			}
+
+			.form-group {
+				margin-bottom: 20px;
+
+				label {
+					cursor       : pointer;
+					user-select  : none;
+					margin-bottom: 20px;
+				}
+
+				input {
+					line-height: 50px;
+					width      : 100%;
+					background : $main-color-4;
+					border     : 1px solid $main-color-1;
+					color      : $main-color-1;
+					padding    : 0 20px;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,62 @@
+.admin-login {
+	padding-top        : 95px;
+	height             : 1000px;
+	background-image   : url(../images/bg-login-register.svg);
+	background-size    : cover;
+	background-position: center 95px;
+
+	h1 {
+		font-family: 'Pangolin', cursive;
+		text-align : center;
+		margin     : 20px 0 50px;
+		font-size  : 50px;
+	}
+
+	.box-login {
+		position  : absolute;
+		width     : 500px;
+		background: #232627;
+		top       : 150px;
+		left      : 50%;
+		transform : translateX(-50%);
+		border    : 1px solid #37393a;
+
+		.box-form-login {
+			padding: 0 30px 50px 30px;
+
+			.form-group {
+				margin-bottom: 80px;
+
+				label {
+					cursor       : pointer;
+					font-size    : 15px;
+					color        : $main-color-1;
+					margin-bottom: 20px;
+				}
+
+				.form-input {
+					position: relative;
+
+					input[type="text"],
+					input[type="password"] {
+						font-size     : 30px;
+						color         : #FFFFFF;
+						width         : 100%;
+						background    : none;
+						border        : none;
+						padding-bottom: 10px;
+						border-bottom : 2px solid rgba(255, 255, 255, 0.5);
+					}
+
+					.error {
+						display   : block;
+						text-align: right;
+						margin-top: 10px;
+						color     : #bc2e31;
+					}
+				}
+
+			}
+		}
+	}
+}

@@ -1,0 +1,33 @@
+section.search
+	form(action="#")
+		.form-group
+			label.content.wow.fadeInUp(for="search" data-wow-delay=".3s") Tìm kiếm
+			input#search(type="text", name="", placeholder="Nhập tìm kiếm...")
+	.ket-qua-tim-kiem
+		.container
+			.so-luong-ket-qua
+				p Kết quả tìm kiếm:
+					span 10
+			.row
+				-for(i=1;i<9;i++)
+					.col-lg-4
+						a(href="chi-tiet-su-kien.html")
+							.item-event
+								figure
+									.box-img
+										img.ofc(src="./images/product/"+i+".jpg", alt="", srcset="") 
+									figcaption
+										h3 TÊN CỦA SỰ KIỆN
+										.info-event
+											.item
+												h5 Từ:
+													span 1.500.000 VND
+											.item
+												h5 Địa chỉ:
+													span Hồ Chí Minh
+											.item
+												h5 Thời gian:
+													span 12.12.2019
+											.item
+												h5 Trạng thái:
+													span Mở bán

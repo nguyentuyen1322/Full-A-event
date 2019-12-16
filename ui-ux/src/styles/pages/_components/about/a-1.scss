@@ -1,0 +1,42 @@
+.home-about {
+	.block-about {
+		cursor             : pointer;
+		position           : relative;
+		color              : $main-color-3;
+		height             : 420px;
+		overflow           : hidden;
+		background-image   : url(../images/about/bg-about.png);
+		background-size    : cover;
+		background-repeat  : no-repeat;
+		background-position: center center;
+		border-bottom      : 1px solid #323637;
+
+		h2 {
+			position  : absolute;
+			top       : 50%;
+			transform : translateY(-50%);
+			text-align: right;
+
+			&.text-left {
+				left: 0;
+
+			}
+
+			&.text-right {
+				right: 0;
+			}
+
+			span {
+				color: $main-color-1;
+			}
+		}
+	}
+
+	@media (max-width: 1024.98px) {
+		.block-about {
+			h2 {
+				display: none;
+			}
+		}
+	}
+}

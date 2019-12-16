@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>A Event | Đăng Sự Kiện</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<style>#loading{-webkit-transition:1.5s;-o-transition:1.5s;position:fixed;top:0;right:0;bottom:0;left:0;z-index:99999;transition:1.5s;background:#000;width:100%;height:100%}#loading #progress{-webkit-transition:1.5s;-o-transition:1.5s;display:none;transition:1.5s;background:#000;width:0;height:1px}#loading #progress,#loading .progstat-wrapper{-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);position:absolute;top:50%;transform:translateY(-50%)}#loading .progstat-wrapper{margin-top:0;width:100%;color:#fff;font-size:14px;font-weight:300;letter-spacing:3px;text-align:center}#loading .logo-loader{-webkit-transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%);position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);margin-top:-100px;width:150px;height:150px}</style>
+		<script>!function(){function n(n){return document.getElementById(n)}document.addEventListener("DOMContentLoaded",function(){var e=n("loading"),t=n("progress"),o=n("progstat"),r=document.images,i=0,d=r.length;if(0==d)return u();function a(){var n=100/d*(i+=1)<<0;if(t.style.width=n,o.innerHTML=n,i===d)return u()}function u(){e.style.opacity=0,setTimeout(function(){e.style.display="none";var n=document.getElementById("loading");n.parentNode.removeChild(n)},1500)}for(var c=0;c<d;c++){var s=new Image;s.onload=a,s.onerror=a,s.src=r[c].src}},!1)}();</script>
+		<link rel="stylesheet" href="./css/core.min.css">
+		<link rel="stylesheet" href="./css/main.min.css"><link href="https://fonts.googleapis.com/css?family=K2D&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Pangolin&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<div id="loading">
+			<div class="logo-loader"><img src="./images/icons/loading.gif" alt=""></div>
+			<div class="progstat-wrapper">Loading: <span id="progstat">0</span>%</div>
+			<div id="progress"></div>
+		</div>
+		<header>
+			<div class="container">
+				<div class="row">
+					<div class="left-menu">
+						<div class="logo"><a href="index.html"><img src="./images/logo.png" alt=""></a></div>
+					</div>
+					<div class="add-event"><a href="form-dang-sk.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25" class="sc-ckVGcZ cRPCZL"><g fill="none" fill-rule="evenodd"><circle id="oval-plus" class="sc-dxgOiQ kSEybs" stroke-width="2" cx="12" cy="12" r="11"></circle><path d="M6,12 L18,12" id="Line" class="sc-dxgOiQ kSEybs" stroke-width="2" stroke-linecap="square"></path><path d="M12,6 L12,18" id="Line2" class="sc-dxgOiQ kSEybs" stroke-width="2" stroke-linecap="square"></path></g></svg><span>ADD A EVENT</span></a></div>
+					<div class="right-menu">
+						<div class="button-login"></div>
+						<div class="avatar">
+							<figure>
+								<div class="box-img"><img class="ofc" src="https://scontent.fsgn5-4.fna.fbcdn.net/v/t1.0-9/56446500_806542706382160_330506997671657472_n.jpg?_nc_cat=104&amp;_nc_oc=AQkJPyas19gTNCr6eI_T0vLLSNDj5RdUX2WpIxDmu0BWtBY6RTU8ALdFpub_xZEq9ts&amp;_nc_ht=scontent.fsgn5-4.fna&amp;oh=7e444b18b75f6dce936da9eed8f6778b&amp;oe=5E1AD9DB" alt=""></div>
+								<figcaption>
+									<h5>HOÀNG VIỆT HÙNG</h5>
+								</figcaption>
+							</figure>
+							<div id="sub-information">
+								<div class="close"><svg width="26" height="24" xmlns="http://www.w3.org/2000/svg"><g><rect fill="none" id="canvas_background" height="26" width="28" y="-1" x="-1"/></g><g><path fill="#91918e" stroke="null" id="svg_2" d="m13.475695,0.194444c-6.483507,0 -11.788195,5.304688 -11.788195,11.788195c0,6.483507 5.304688,11.788195 11.788195,11.788195s11.788195,-5.304688 11.788195,-11.788195c0,-6.483507 -5.304688,-11.788195 -11.788195,-11.788195zm5.776215,15.914063l-1.650347,1.650347l-4.125868,-4.125868l-4.125868,4.125868l-1.650347,-1.650347l4.125868,-4.125868l-4.125868,-4.125868l1.650347,-1.650347l4.125868,4.125868l4.125868,-4.125868l1.650347,1.650347l-4.125868,4.125868l4.125868,4.125868z"/></g></svg></div>
+								<figure>
+									<div class="box-img"><img class="ofc" src="https://scontent.fsgn5-4.fna.fbcdn.net/v/t1.0-9/56446500_806542706382160_330506997671657472_n.jpg?_nc_cat=104&amp;_nc_oc=AQkJPyas19gTNCr6eI_T0vLLSNDj5RdUX2WpIxDmu0BWtBY6RTU8ALdFpub_xZEq9ts&amp;_nc_ht=scontent.fsgn5-4.fna&amp;oh=7e444b18b75f6dce936da9eed8f6778b&amp;oe=5E1AD9DB" alt=""></div>
+									<figcaption>
+										<h5>HOÀNG VIỆT HÙNG<span>V.I.P</span></h5><a href="#">Logout</a>
+									</figcaption>
+								</figure>
+								<ul class="list-item"><a href="form-dang-sk.html">
+										<li class="item">Thêm sự kiện mới</li></a><a href="su-kien-da-tao.html">
+										<li class="item">Sự kiện đã tạo</li></a><a href="thong-tin-tai-khoan.html">
+										<li class="item">Thông tin tài khoản</li></a><a href="#">
+										<li class="item">Đăng xuất</li></a></ul>
+							</div>
+						</div>
+						<div class="button-search"><a href="tim-kiem.html"><svg width="26" height="26" xmlns="http://www.w3.org/2000/svg"><g><rect fill="none" id="canvas_background" height="28" width="28" y="-1" x="-1"/></g><g><g stroke="null" id="svg_8"><path fill="#ffffff" stroke="null" id="svg_4" d="m23.537278,25.717651c-0.574281,0 -1.148562,-0.255236 -1.595225,-0.63809l-7.018988,-7.018988c-0.255236,-0.255236 -0.255236,-0.63809 0,-0.893326s0.63809,-0.255236 0.893326,0l7.018988,7.018988c0.382854,0.382854 1.020944,0.382854 1.339989,0c0.382854,-0.382854 0.382854,-1.020944 0,-1.339989l-7.018988,-7.018988c-0.255236,-0.255236 -0.255236,-0.63809 0,-0.893326s0.63809,-0.255236 0.893326,0l7.018988,7.018988c0.893326,0.893326 0.893326,2.297123 0,3.190449c-0.382854,0.319045 -0.957135,0.574281 -1.531416,0.574281z"/><g stroke="null" id="svg_7"><path fill="#ffffff" stroke="null" id="svg_2" d="m10.073583,19.911034c-5.423763,0 -9.826583,-4.40282 -9.826583,-9.826583s4.40282,-9.890392 9.826583,-9.890392s9.890392,4.466629 9.890392,9.890392c0,0.765708 -0.063809,1.531416 -0.255236,2.297123c-0.063809,0.319045 -0.446663,0.574281 -0.765708,0.446663c-0.319045,-0.063809 -0.574281,-0.446663 -0.446663,-0.765708c0.127618,-0.63809 0.255236,-1.27618 0.255236,-1.978078c0,-4.721865 -3.828539,-8.614213 -8.614213,-8.614213s-8.614213,3.892348 -8.614213,8.614213s3.828539,8.614213 8.614213,8.614213c0.701899,0 1.339989,-0.063809 2.041887,-0.255236c0.319045,-0.063809 0.701899,0.127618 0.765708,0.446663c0.063809,0.319045 -0.127618,0.701899 -0.446663,0.765708c-0.829517,0.191427 -1.595225,0.255236 -2.424741,0.255236z"/><path fill="#ffffff" stroke="null" id="svg_6" d="m10.073583,17.422483c-4.019966,0 -7.338033,-3.318067 -7.338033,-7.338033s3.318067,-7.338033 7.338033,-7.338033s7.338033,3.318067 7.338033,7.338033s-3.254258,7.338033 -7.338033,7.338033zm0,-13.399886c-3.318067,0 -6.061853,2.743786 -6.061853,6.061853s2.743786,6.061853 6.061853,6.061853s6.061853,-2.743786 6.061853,-6.061853s-2.679977,-6.061853 -6.061853,-6.061853z"/></g></g></g></svg></a></div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main>
+			<section class="form-add-event">
+				<div class="main-banner">
+					<div class="form-input">
+						<figure class="button-choose-file"><img class="ofc" src="./images/form-add-event/main-banner.jpg" alt="">
+							<figcaption>
+								<h3>Tải ảnh bìa lên</h3>
+								<p>Kích thước tối ưu:</p>
+								<p>1440 x 600px (không lớn hơn 1MB)</p><svg style="enable-background:new 0 0 24 24;" version="1.1" viewBox="0 0 24 24" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="info"/><g id="icons"><path d="M19,7h-0.4c-0.4,0-0.7-0.2-0.9-0.6l-1.2-2.3c-0.3-0.7-1-1.1-1.8-1.1H9.2C8.5,3,7.8,3.4,7.4,4.1L6.3,6.4   C6.1,6.8,5.8,7,5.4,7H5c-2.2,0-4,1.8-4,4v6c0,2.2,1.8,4,4,4h14c2.2,0,4-1.8,4-4v-6C23,8.8,21.2,7,19,7z M12,17c-2.2,0-4-1.8-4-4   c0-2.2,1.8-4,4-4s4,1.8,4,4C16,15.2,14.2,17,12,17z" id="photo"/></g></svg>
+							</figcaption>
+						</figure>
+						<input class="file-img" type="file" hidden>
+					</div>
+				</div>
+				<div class="form-info-event">
+					<form action="#">
+						<div class="form-row">
+							<div class="form-group col-lg-12">
+								<label class="big-title" for="ten-su-kien">Tên sự kiện:</label>
+								<div class="form-input">
+									<input class="big-input" id="ten-su-kien" type="text" name="" placeholder="Nhập tên sự kiện">
+								</div>
+							</div>
+							<div class="form-group col-lg-6">
+								<label for="dia-diem">Tên địa điểm:</label>
+								<div class="form-input">
+									<input id="dia-diem" type="text" name="" placeholder="Nhập tên sự kiện">
+								</div>
+								<div class="form-row margin-5px">
+									<div class="form-input col-lg-6">
+										<select name="">
+											<option value="0">-- Tỉnh / Thành --</option>
+											<option value="0">Thành Phố Hồ Chí Minh</option>
+											<option value="0">Thành Phố Hà Nội</option>
+											<option value="0">Thành Phố Đà Nẵng</option>
+											<option value="0">Thành Phố Hải Phòng</option>
+											<option value="0">Thành Phố Cần Thơ</option>
+											<option value="0">Tỉnh An Giang</option>
+											<option value="0">Tỉnh Bà Rịa - Vũng Tàu</option>
+											<option value="0">Tỉnh Bạc Liêu</option>
+											<option value="0">Tỉnh Bắc Giang</option>
+											<option value="0">Tỉnh Bắc Kạn</option>
+											<option value="0">Tỉnh Bắc Ninh</option>
+											<option value="0">Tỉnh Bến Tre</option>
+											<option value="0">Tỉnh Bình Dương</option>
+											<option value="0">Tỉnh Bình Định</option>
+											<option value="0">Tỉnh Bình Phước</option>
+											<option value="0">Tỉnh Bình Thuận</option>
+											<option value="0">Tỉnh Cà Mau</option>
+											<option value="0">Tỉnh Cao Bằng</option>
+											<option value="0">Tỉnh Đắk Lắk</option>
+											<option value="0">Tỉnh Đắk Nông</option>
+											<option value="0">Tỉnh Điện Biên</option>
+											<option value="0">Tỉnh Đồng Nai</option>
+											<option value="0">Tỉnh Đồng Tháp</option>
+											<option value="0">Tỉnh Gia Lai</option>
+											<option value="0">Tỉnh Hà Giang</option>
+											<option value="0">Tỉnh Hà Nam</option>
+											<option value="0">Tỉnh Hà Tĩnh</option>
+											<option value="0">Tỉnh Hải Dương</option>
+											<option value="0">Tỉnh Hậu Giang</option>
+											<option value="0">Tỉnh Hòa Bình</option>
+											<option value="0">Tỉnh Hưng Yên</option>
+											<option value="0">Tỉnh Kiên Giang</option>
+											<option value="0">Tỉnh Kon Tum</option>
+											<option value="0">Tỉnh Khánh Hòa</option>
+											<option value="0">Tỉnh Lai Châu</option>
+											<option value="0">Tỉnh Lạng Sơn</option>
+											<option value="0">Tỉnh Lào Cai</option>
+											<option value="0">Tỉnh Lâm Đồng</option>
+											<option value="0">Tỉnh Long An</option>
+											<option value="0">Tỉnh Nam Định</option>
+											<option value="0">Tỉnh Ninh Bình</option>
+											<option value="0">Tỉnh Ninh Thuận</option>
+											<option value="0">Tỉnh Nghệ An</option>
+											<option value="0">Tỉnh Phú Thọ</option>
+											<option value="0">Tỉnh Phú Yên</option>
+											<option value="0">Tỉnh Quảng Bình</option>
+											<option value="0">Tỉnh Quảng Nam</option>
+											<option value="0">Tỉnh Quảng Ninh</option>
+											<option value="0">Tỉnh Quảng Ngãi</option>
+											<option value="0">Tỉnh Quảng Trị</option>
+											<option value="0">Tỉnh Sóc Trăng</option>
+											<option value="0">Tỉnh Sơn La</option>
+											<option value="0">Tỉnh Tây Ninh</option>
+											<option value="0">Tỉnh Tiền Giang</option>
+											<option value="0">Tỉnh Tuyên Quang</option>
+											<option value="0">Tỉnh Thái Bình</option>
+											<option value="0">Tỉnh Thái Nguyên</option>
+											<option value="0">Tỉnh Thanh Hóa</option>
+											<option value="0">Tỉnh Thừa Thiên Huế</option>
+											<option value="0">Tỉnh Trà Vinh</option>
+											<option value="0">Tỉnh Vĩnh Long</option>
+											<option value="0">Tỉnh Vĩnh Phúc</option>
+											<option value="0">Tỉnh Yên Bái</option>
+										</select>
+									</div>
+									<div class="form-input col-lg-6">
+										<select name="">
+											<option value="0">-- Quận / Huyện --</option>
+											<option value="0">Quận 1</option>
+											<option value="0">Quận 2</option>
+											<option value="0">Quận 3</option>
+											<option value="0">Quận 4</option>
+											<option value="0">Quận 5</option>
+											<option value="0">Quận 6</option>
+											<option value="0">Quận 7</option>
+											<option value="0">Quận 8</option>
+											<option value="0">Quận 9</option>
+											<option value="0">Quận 10</option>
+											<option value="0">Quận 11</option>
+											<option value="0">Quận 12</option>
+											<option value="0">Quận Bình Thạnh</option>
+											<option value="0">Quận Gò Vấp</option>
+											<option value="0">Quận Phú Nhuận</option>
+											<option value="0">Quận Tân Bình</option>
+											<option value="0">Quận Tân Phú</option>
+											<option value="0">Quận Bình Tân</option>
+											<option value="0">Huyện Cần Giờ</option>
+											<option value="0">Huyện Củ Chi</option>
+											<option value="0">Huyện Hóc Môn</option>
+											<option value="0">Huyện Nhà Bè</option>
+											<option value="0">Huyện Bình Chánh</option>
+											<option value="0">Quận Thủ Đức</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="form-group col-lg-6">
+								<div class="title-input">Logo của sự kiện</div>
+								<div class="form-input add-img-small">
+									<figure class="button-choose-file"><img class="ofc" src="./images/icons/default-logo-organizer.png" alt=""></figure>
+									<input class="file-img" type="file" name="" hidden>
+								</div>
+							</div>
+							<div class="form-group col-lg-6">
+								<label for="loai-su-kien">Chọn loại sự kiện</label>
+								<div class="form-input">
+									<select id="loai-su-kien" name="">
+										<option>-- Thể loại sự kiện --</option>
+										<optgroup label="Giải trí">
+											<option>Thể loại 1</option>
+											<option>Thể loại 2</option>
+											<option>Thể loại 3</option>
+											<option>Thể loại 4</option>
+											<option>Thể loại 5</option>
+											<option>Thể loại 6</option>
+										</optgroup>
+										<optgroup label="Học Tập">
+											<option>Thể loại 1</option>
+											<option>Thể loại 2</option>
+											<option>Thể loại 3</option>
+											<option>Thể loại 4</option>
+											<option>Thể loại 5</option>
+											<option>Thể loại 6</option>
+										</optgroup>
+										<optgroup label="Khác">
+											<option>Thể loại 1</option>
+											<option>Thể loại 2</option>
+											<option>Thể loại 3</option>
+											<option>Thể loại 4</option>
+											<option>Thể loại 5</option>
+											<option>Thể loại 6</option>
+										</optgroup>
+									</select>
+								</div>
+							</div>
+							<div class="form-group col-lg-6">
+								<label>Nhà tổ chức</label>
+								<div class="form-input add-img-small">
+									<figure class="button-choose-file"><img class="ofc" src="./images/icons/default-logo-organizer.png" alt=""></figure>
+									<input class="file-img" type="file" name="" hidden>
+								</div>
+							</div>
+							<div class="form-group col-lg-6">
+								<label>Số lượng vé</label>
+								<div class="form-input">
+									<input type="number" placeholder="Nhập tên sự kiện">
+								</div>
+							</div>
+							<div class="form-group col-lg-6">
+								<label>Giá vé</label>
+								<div class="form-input">
+									<input type="number" placeholder="Nhập tên sự kiện">
+								</div>
+							</div>
+							<div class="form-group col-lg-6">
+								<label>Ngày diễn ra sự kiện</label>
+								<div class="form-input">
+									<input type="date">
+								</div>
+							</div>
+							<div class="form-group col-lg-12">
+								<label>Thông tin sự kiện</label>
+							</div>
+							<div class="form-group col-lg-6">
+								<label for="sdt">Thông tin liên lạc</label>
+								<div class="form-input">
+									<input id="sdt" type="text" name="" placeholder="Số điện thoại">
+								</div>
+							</div>
+							<div class="form-group col-lg-6">
+								<label for="sdt">Email nhận thông báo</label>
+								<div class="form-input">
+									<input id="sdt" type="Email" name="" placeholder="hoangviet.hung.009@gmail.com">
+								</div>
+							</div>
+						</div>
+						<button class="btn">THÊM SỰ KIỆN</button>
+					</form>
+				</div>
+			</section>
+		</main>
+		<footer>
+			<div class="container">
+				<div class="row list-info-company">
+					<div class="col-lg-6">
+						<h5>HOGASH STUDIOS</h5>
+						<p>Were a full-service digital agency that believes being a Favorite brand is more valuable than just being a Famous one. We craft beautifully useful, connected ecosystems that grow businesses and build enduring relationships between brands and humans.</p>
+					</div>
+					<div class="col-lg-2 col-md-4">
+						<h5>COMPANY</h5>
+						<ul class="list-item-footer">
+							<li class="item-footer"><a href="#">Our Blog</a></li>
+							<li class="item-footer"><a href="#">Instagram</a></li>
+							<li class="item-footer"><a href="#">Snapchat</a></li>
+							<li class="item-footer"><a href="#">Facebook</a></li>
+							<li class="item-footer"><a href="#">Twitter</a></li>
+							<li class="item-footer"><a href="#">Dribbble</a></li>
+						</ul>
+					</div>
+					<div class="col-lg-2 col-md-4">
+						<h5>MEMBER</h5>
+						<ul class="list-item-footer">
+							<li class="item-footer"><a href="#">Home</a></li>
+							<li class="item-footer"><a href="#">About</a></li>
+							<li class="item-footer"><a href="#">Pricing</a></li>
+							<li class="item-footer"><a href="#">Blog</a></li>
+							<li class="item-footer"><a href="#">Services</a></li>
+							<li class="item-footer"><a href="#">Shop</a></li>
+						</ul>
+					</div>
+					<div class="col-lg-2 col-md-4">
+						<h5>FOLLOW</h5>
+						<ul class="list-item-footer">
+							<li class="item-footer"><a href="#">Account</a></li>
+							<li class="item-footer"><a href="#">Billing</a></li>
+							<li class="item-footer"><a href="#">Membership</a></li>
+							<li class="item-footer"><a href="#">Receipt</a></li>
+							<li class="item-footer"><a href="#">Invoice</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="coppy-right">
+					<h3>@ 2020 <a href="https://www.facebook.com/hoangviet.hung.009"><span>A EVENT | ALL COPYRIGHT BY A EVENT</span></a></h3>
+					<p>This is Project of Hùng, Tuyến, Huy, Sơn.</p>
+				</div>
+			</div>
+		</footer>
+		<div id="fb-root"></div>
+		<script>
+			window.fbAsyncInit = function() {
+			FB.init({
+			xfbml            : true,
+			version          : 'v4.0'
+			});
+			};
+			(function(d, s, id) {
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id)) return;
+			js = d.createElement(s); js.id = id;
+			js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+			fjs.parentNode.insertBefore(js, fjs);
+			}(document, 'script', 'facebook-jssdk'));
+		</script>
+		<div class="fb-customerchat" attribution="setup_tool" page_id="117903549608295" theme_color="#ffc300" logged_in_greeting="A Event xin chào, chúng tôi giúp gì được cho bạn ?" logged_out_greeting="A Event xin chào, chúng tôi giúp gì được cho bạn ?"></div>
+		<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?&amp;key=AIzaSyCHvmyTralDp2Y0m7zEiN185u1vtArcC5s&amp;libraries=places"></script>
+		<script type="text/javascript" src="./js/core.min.js"></script>
+		<script type="text/javascript" src="./js/main.min.js"></script>
+	</body>
+</html>

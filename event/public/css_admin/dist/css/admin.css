@@ -1,0 +1,70 @@
+.bg-main{
+    background:#1a1d1e
+}
+.admin-login{
+    background-image:url(../img/bg-login-register.svg);
+    background-position:center 95px;
+    background-size:cover;
+    padding-top:95px;
+    height:1000px
+}
+.admin-login h1{
+    margin:20px 0 50px;
+    font-family:Pangolin,cursive;
+    font-size:50px;
+    text-align:center
+}
+.admin-login .box-login{
+    -webkit-transform:translateX(-50%);
+    -ms-transform:translateX(-50%);
+    position:absolute;
+    top: 100px !important;
+    left:50%;
+    transform:translateX(-50%);
+    border:1px solid #37393a;
+    background:#232627;
+    width:500px
+}
+.admin-login .box-login .box-form-login{
+    padding:0 30px 50px
+}
+.admin-login .box-login .box-form-login .form-group{
+    margin-bottom:80px
+}
+.admin-login .box-login .box-form-login .form-group label{
+    cursor:pointer;
+    margin-bottom:20px;
+    color:#ffd800;
+    font-size:15px;
+}
+.admin-login .box-login .box-form-login .form-group .form-input{
+    position:relative
+}
+.admin-login .box-login .box-form-login .form-group .form-input input[type=password],.admin-login .box-login .box-form-login .form-group .form-input input[type=text]{
+    border:none;
+    border-bottom:2px solid hsla(0,0%,100%,.5);
+    background:none;
+    padding-bottom:10px;
+    width:100%;
+    color:#fff;
+    font-size:30px;
+}
+.admin-login .box-login .box-form-login .form-group .form-input .error{
+    display:block;
+    margin-top:10px;
+    color:#bc2e31;
+    text-align:right;
+}
+
+.btn{
+    display:block;
+    border:none;
+    border-radius:20px;
+    background:#ffd800;
+    width:100%;
+    color:#1a1d1e;
+    font-family:Anton,sans-serif;
+    letter-spacing:5px;
+    line-height:50px;
+    text-align:center
+}

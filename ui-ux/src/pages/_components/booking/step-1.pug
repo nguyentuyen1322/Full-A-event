@@ -1,0 +1,82 @@
+section.booking-step-1
+	.banner-event
+		figure
+			img.ofc(src="./images/banner/5.png", alt="", srcset="")
+	nav
+		.container
+			ul
+				li.item.active
+					a(href="dat-ve-buoc-1.html") Chọn vé
+				li.item
+					a(href="dat-ve-buoc-2.html") Thanh toán
+				li.item Hoàn tất
+	.booking
+		.container
+			.row
+				.col-lg-8
+					.choose-tickets
+						table
+							thead
+								tr
+									th LOẠI VÉ
+									th GIÁ VÉ
+									th SỐ LƯỢNG
+							tbody
+								tr
+									td HẠNG A
+									td 3,500,000 VND
+									td
+										.quantity
+											input(type="number" min="1" max="9" step="1" value="1")
+								tr
+									td HẠNG B
+									td 3,500,000 VND
+									td
+										.quantity
+											input(type="number" min="1" max="9" step="1" value="1")
+								tr
+									td HẠNG C
+									td 3,500,000 VND
+									td
+										.quantity
+											input(type="number" min="1" max="9" step="1" value="1")
+								tr
+									td HẠNG D
+									td 3,500,000 VND
+									td
+										.quantity
+											input(type="number" min="1" max="9" step="1" value="1")
+								tr
+									td HẠNG E
+									td 3,500,000 VND
+									td
+										.quantity
+											input(type="number" min="1" max="9" step="1" value="1")
+				.col-lg-4
+					.box-price
+						.title-box
+							h3 THÔNG TIN ĐẶT VÉ
+						table
+							thead
+								tr
+									th Loại vé
+									th Số lượng
+							tbody
+								tr
+									td
+										.loaive Hạng A
+										.gia 4.500.000
+									td
+										.soluong 3
+										.tonggia 13.500.000
+								tr
+									td
+										.loaive Hạng B
+										.gia 3.500.000
+									td
+										.soluong 1
+										.tonggia 3.500.000
+								tr
+									td Tổng cộng
+									td 17.000.000
+						a(href="dat-ve-buoc-2.html").btn Tiếp tục

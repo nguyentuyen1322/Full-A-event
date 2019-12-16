@@ -1,0 +1,17 @@
+section.admin-login
+	.container
+		.box-login
+			h1 Admin - A.E
+			.box-form-login
+				form(action="#")
+					.form-group
+						label(for="user-name") Admin Name:
+						.form-input
+							input#user-name(type="text" placeholder="Nhập tên Admin")
+							span.error Bắt lỗi
+					.form-group
+						label(for="pass") Mật khẩu:
+						.form-input
+							input#pass(type="password", placeholder="Nhập mật khẩu")
+							span.error Bắt lỗi
+					button.btn TRUY CẬP

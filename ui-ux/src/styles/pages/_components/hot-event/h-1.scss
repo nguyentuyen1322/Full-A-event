@@ -1,0 +1,336 @@
+.hot-event {
+	overflow   : hidden;
+	padding-top: 50px;
+
+	.hotEvent-wrapper {
+		overflow: hidden;
+		padding : 0;
+
+		figure {
+			display  : flex;
+			flex-wrap: wrap;
+			margin   : 0 -15px;
+
+			.box-img {
+				flex         : 0 0 50%;
+				max-width    : 50%;
+				border-radius: 50px;
+				padding      : 0 15px;
+				height       : 500px;
+				overflow     : hidden;
+			}
+
+			figcaption {
+				position : relative;
+				flex     : 0 0 50%;
+				max-width: 50%;
+				padding  : 0 15px;
+
+				.name-event {
+					font-family  : 'Anton', sans-serif;
+					margin-bottom: 20px;
+
+					h3 {
+						position      : relative;
+						color         : $main-color-1;
+						font-size     : 70px;
+						letter-spacing: 5px;
+						font-weight   : 400;
+						text-transform: uppercase;
+						margin-bottom : 30px;
+
+						overflow          : hidden;
+						display           : -webkit-box;
+						-webkit-line-clamp: 1;
+						text-overflow     : ellipsis;
+						-webkit-box-orient: vertical;
+						max-height        : 105px;
+
+						&:after {
+							content      : '';
+							position     : absolute;
+							width        : 70%;
+							height       : 5px;
+							bottom       : 0;
+							left         : 0;
+							background   : $main-color-1;
+							border-radius: 10px;
+						}
+					}
+
+					h5 {
+						font-size         : 30px;
+						letter-spacing    : 5px;
+						font-weight       : 400;
+						text-transform    : uppercase;
+						max-height        : 90px;
+						overflow          : hidden;
+						display           : -webkit-box;
+						-webkit-line-clamp: 2;
+						text-overflow     : ellipsis;
+						-webkit-box-orient: vertical;
+					}
+				}
+
+				.decription-event {
+					.box-countdown {
+						display      : flex;
+						margin-bottom: 30px;
+						color        : $main-color-1;
+
+						.block {
+							width        : 85px;
+							display      : flex;
+							padding-right: 20px;
+
+							span {
+								padding-left: 10px;
+								color       : #ffffff;
+							}
+
+							&:last-child {
+								position    : relative;
+								width       : auto;
+								padding-left: 75px;
+
+								span {
+									padding-left  : 0;
+									letter-spacing: 5px;
+								}
+
+								&:after {
+									content   : '';
+									width     : 50px;
+									height    : 1px;
+									position  : absolute;
+									left      : 0;
+									top       : 50%;
+									transform : translateY(-50%);
+									background: $main-color-1;
+								}
+							}
+						}
+					}
+
+					p {
+						max-height        : 90px;
+						font-size         : 20px;
+						color             : rgb(141, 143, 144);
+						-webkit-line-clamp: 3;
+					}
+				}
+
+				a {
+					position     : absolute;
+					width        : 100px;
+					line-height  : 35px;
+					bottom       : 0;
+					left         : 15px;
+					border-radius: 0;
+					background   : $main-color-1;
+					text-align   : center;
+					color        : $main-color-2;
+					font-weight  : 700;
+					transition   : .3s all ease-in-out;
+
+					&.right {
+						right: 15px;
+						left : unset;
+					}
+
+					&:hover {
+						background: $main-color-3;
+					}
+				}
+			}
+		}
+	}
+
+	.slider-hotEvent {
+		position      : relative;
+		padding-bottom: 75px;
+
+		.swiper-pagination {
+			bottom    : 0;
+			text-align: left;
+
+			.swiper-pagination-bullet {
+				background: $main-color-1;
+			}
+		}
+
+		.swiper-button-prev {
+			background-image: url(../images/icons/prev-slider.svg);
+			background-size : cover;
+			transition      : .2s all ease-in-out;
+			top             : 100%;
+			margin-top      : -45px;
+			left            : unset;
+			right           : 60px;
+		}
+
+		.swiper-button-next {
+			background-image: url(../images/icons/next-slider.svg);
+			background-size : cover;
+			transition      : .2s all ease-in-out;
+			top             : 100%;
+			margin-top      : -45px;
+			left            : unset;
+			right           : 0;
+		}
+	}
+
+	@media (max-width: 1024.98px) {
+		.hotEvent-wrapper {
+			figure {
+				flex-direction: column;
+				margin        : 0;
+
+				.box-img {
+					order        : 1;
+					flex         : 0 0 100%;
+					max-width    : 100%;
+					padding      : 0;
+					height       : 300px;
+					border-radius: unset;
+					margin-bottom: 25px;
+				}
+
+				figcaption {
+					order    : 2;
+					flex     : 0 0 100%;
+					max-width: 100%;
+					padding  : 0 0 40px 0;
+
+					.name-event {
+						margin-bottom: 10px;
+
+						h3 {
+							font-size : 32px;
+							max-height: 48px;
+
+							&:after {
+								width : 30%;
+								height: 3px;
+							}
+						}
+
+						h5 {
+							font-size     : 24px;
+							max-height    : 72px;
+							letter-spacing: 3px;
+						}
+					}
+
+					.decription-event {
+						p {
+							max-height: 75px;
+							font-size : 16px;
+						}
+					}
+
+					a {
+						left : unset;
+						right: 0;
+
+						&.right {
+							right: 0;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	@media (max-width: 767.98px) {
+		.hotEvent-wrapper {
+			figure {
+				figcaption {
+					.name-event {
+						h3 {
+							font-size    : 24px;
+							margin-bottom: 10px;
+							max-height   : 36px;
+
+							&:after {
+								height: 2px;
+							}
+						}
+
+						h5 {
+							font-size : 18px;
+							max-height: 54px;
+						}
+					}
+
+					.decription-event {
+						.box-countdown {
+							margin-bottom: 15px;
+
+							.block {
+								font-size    : 13px;
+								width        : auto;
+								padding-right: 15px;
+
+								span {
+									padding-left: 10px;
+									color       : #ffffff;
+								}
+
+								&:last-child {
+									width       : auto;
+									padding-left: 0;
+
+									&:after {
+										content: none;
+									}
+								}
+							}
+						}
+
+						p {
+							max-height: 90px;
+							font-size : 13px;
+						}
+					}
+
+					a {
+						position     : absolute;
+						width        : 100px;
+						line-height  : 35px;
+						bottom       : 0;
+						left         : 15px;
+						border-radius: 0;
+						background   : $main-color-1;
+						text-align   : center;
+						color        : $main-color-2;
+						font-weight  : 700;
+						transition   : .3s all ease-in-out;
+
+						&.right {
+							right: 15px;
+							left : unset;
+						}
+
+						&:hover {
+							background: $main-color-3;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	@media (max-width: 575.98px) {
+		.hotEvent-wrapper {
+			figure {
+				figcaption {
+					a {
+						line-height: 25px;
+						font-size  : 13px;
+					}
+				}
+			}
+		}
+	}
+}

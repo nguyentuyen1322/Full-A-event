@@ -1,0 +1,11 @@
+diff a/ui-ux/dist/admin-login.html b/ui-ux/dist/admin-login.html	(rejected hunks)
+@@ -42,7 +42,8 @@
+ 										<h5>HOÀNG VIỆT HÙNG<span>V.I.P</span></h5><a href="#">Logout</a>
+ 									</figcaption>
+ 								</figure>
+-								<ul class="list-item"><a href="su-kien-da-tao.html">
++								<ul class="list-item"><a href="form-dang-sk.html">
++										<li class="item">Thêm sự kiện mới</li></a><a href="su-kien-da-tao.html">
+ 										<li class="item">Sự kiện đã tạo</li></a><a href="thong-tin-tai-khoan.html">
+ 										<li class="item">Thông tin tài khoản</li></a><a href="#">
+ 										<li class="item">Đăng xuất</li></a></ul>

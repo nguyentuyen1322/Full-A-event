@@ -1,0 +1,232 @@
+.user {
+	display  : flex;
+	flex-wrap: wrap;
+	position : relative;
+
+	aside {
+		flex      : 0 0 30%;
+		max-width : 30%;
+		position  : sticky;
+		height    : 100vh;
+		top       : 0;
+		left      : 0;
+		background: #1d2224;
+
+		figure {
+			display    : flex;
+			align-items: center;
+			padding    : 50px;
+
+			.box-img {
+				position     : relative;
+				overflow     : hidden;
+				width        : 100px;
+				height       : 100px;
+				border-radius: 50%;
+				margin-right : 20px;
+
+				&:after {
+					content      : '';
+					position     : absolute;
+					width        : 100%;
+					height       : 100%;
+					top          : 0;
+					left         : 0;
+					border       : 2px solid $main-color-1;
+					border-radius: 50%;
+				}
+			}
+
+			figcaption {
+				h5 {
+					font-family   : 'Anton', sans-serif;
+					font-weight   : 400;
+					color         : $main-color-3;
+					font-size     : 20px;
+					letter-spacing: 2px;
+
+					span {
+						margin-left: 30px;
+						color      : $main-color-1;
+					}
+				}
+
+				a {
+					color: $main-color-3;
+				}
+			}
+		}
+
+		.list-item {
+
+			.item {
+				color        : $main-color-3;
+				border-bottom: 1px solid rgba(70, 70, 70, 0.44);
+				margin-bottom: 15px;
+				padding      : 0 50px;
+				line-height  : 50px;
+				transition   : .3s all ease-in-out;
+
+				&:hover {
+					color: $main-color-1;
+				}
+
+				&.active {
+					color: $main-color-1;
+				}
+			}
+		}
+	}
+
+	._main-user {
+		flex       : 0 0 70%;
+		max-width  : 70%;
+		padding-top: 50px;
+		padding    : 25px;
+		background : #1c2021;
+
+		.title {
+			color      : #ffd800;
+			font-family: Pangolin, cursive;
+			font-size  : 60px;
+		}
+
+		.list-sk-da-tao {
+			margin-top: 25px;
+
+			.item-event {
+				margin-bottom: 25px;
+
+				figure {
+					position: relative;
+
+					.list-task {
+						display        : flex;
+						align-items    : center;
+						justify-content: center;
+						position       : absolute;
+						top            : 0;
+						left           : 0;
+						width          : 100%;
+						height         : 100%;
+						background     : rgba($color: #000000, $alpha: .8);
+						opacity        : 0;
+						transition     : .3s all ease-in-out;
+
+						.item {
+							position     : relative;
+							width        : 100px;
+							height       : 100px;
+							background   : $main-color-1;
+							border-radius: 50%;
+							margin       : 0 15px;
+
+							>a {
+								display    : block;
+								font-weight: 700;
+								position   : absolute;
+								top        : 50%;
+								left       : 50%;
+								transform  : translate(-50%, -50%);
+								color      : #000000;
+								padding    : 30px;
+							}
+						}
+					}
+				}
+
+				@media (min-width: 1440px) {
+					&:hover {
+						figure {
+							.list-task {
+								opacity: 1;
+							}
+						}
+					}
+				}
+			}
+		}
+
+		.list-info-user {
+			padding: 50px 30px;
+
+			.form-group {
+				margin-bottom: 30px;
+
+				label {
+					cursor       : pointer;
+					font-size    : 15px;
+					color        : $main-color-1;
+					margin-bottom: 20px;
+
+					&.choose-file {
+						background   : $main-color-2;
+						padding      : 10px 20px;
+						border-radius: 15px;
+						width        : 100%;
+					}
+
+					&.check-box {
+						user-select : none;
+						margin-right: 20px;
+					}
+				}
+
+				.form-input {
+					position: relative;
+
+					input[type="text"],
+					input[type="password"],
+					input[type="phone"] {
+						font-size     : 20px;
+						color         : #FFFFFF;
+						width         : 100%;
+						background    : none;
+						border        : none;
+						padding-bottom: 10px;
+						border-bottom : 2px solid rgba(255, 255, 255, 0.5);
+					}
+
+					input[type="radio"] {
+						margin-right: 20px;
+					}
+
+					input[type="date"] {
+						width        : 100%;
+						margin-right : 20px;
+						border       : none;
+						background   : $main-color-2;
+						color        : $main-color-1;
+						padding      : 10px 0px 10px 10px;
+						border-radius: 15px;
+					}
+
+					select {
+						width        : 100%;
+						color        : $main-color-1;
+						background   : $main-color-2;
+						height       : 42px;
+						border       : none;
+						padding-left : 15px;
+						border-radius: 15px;
+
+						option {
+							text-align: center;
+						}
+					}
+
+					.error {
+						display   : block;
+						text-align: right;
+						margin-top: 10px;
+						color     : #bc2e31;
+					}
+				}
+
+				p {
+					margin-bottom: 10px;
+				}
+			}
+		}
+	}
+}

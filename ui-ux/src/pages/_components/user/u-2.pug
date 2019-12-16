@@ -1,0 +1,52 @@
+section.user
+	aside
+		figure
+			.box-img
+				img.ofc(src="https://scontent.fsgn5-4.fna.fbcdn.net/v/t1.0-9/56446500_806542706382160_330506997671657472_n.jpg?_nc_cat=104&_nc_oc=AQkJPyas19gTNCr6eI_T0vLLSNDj5RdUX2WpIxDmu0BWtBY6RTU8ALdFpub_xZEq9ts&_nc_ht=scontent.fsgn5-4.fna&oh=7e444b18b75f6dce936da9eed8f6778b&oe=5E1AD9DB", alt="")
+			figcaption
+				h5 HOÀNG VIỆT HÙNG
+		ul.list-item
+			a(href="su-kien-da-tao.html")
+				li.item Sự kiện đã tạo
+			a(href="thong-tin-tai-khoan.html")
+				li.item Thông tin tài khoản
+			a(href="#")
+				li.item Đăng xuất
+	._main-user
+		.title-catalog.wow.fadeInLeft(data-wow-delay=".3s")
+				a(href="#")
+					img.icon(src="./images/icons/add.svg", alt="", srcset="")
+				.name-catalog
+					span A . Event
+					a(href="thong-tin-tai-khoan.html")
+						h3 Thông tin tài khoản
+		.list-info-user
+			.form-row
+				.form-group.col-lg-12
+					label(for="user-name") Tài khoản
+					.form-input
+						input#user-name(type="text" value="hoangviethung" readonly)
+				.form-group.col-lg-12
+					label(for="email") Email *
+					.form-input
+						input#email(type="text" readonly value="hoangviet.hung.009@gmail.com")
+				.form-group.col-lg-12
+					label(for="address") Số điện thoại *
+					.form-input
+						input(type="phone" value="0969912404")
+				.form-group.col-lg-12
+					label(for="address" ) Địa chỉ
+					.form-input
+						input#address(type="text" value="549/29 Nguyễn Đình Chiểu P.2 Quận 3 THP HCM" readonly)
+			.form-row
+				.form-group.col-lg-6
+					label(for="address") Ngày sinh *
+					.form-input
+						input(type="date" value="2013-01-08" readonly)
+				.form-group.col-lg-6
+					label(for="address") Giới tính *
+					.form-input
+						label Nam
+			.form-row
+				.form-group.col-lg-3
+					a.btn(href="sua-thong-tin-tai-khoan.html") Sửa

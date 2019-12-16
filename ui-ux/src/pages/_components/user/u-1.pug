@@ -1,0 +1,49 @@
+section.user
+	aside
+		figure
+			.box-img
+				img.ofc(src="https://scontent.fsgn5-4.fna.fbcdn.net/v/t1.0-9/56446500_806542706382160_330506997671657472_n.jpg?_nc_cat=104&_nc_oc=AQkJPyas19gTNCr6eI_T0vLLSNDj5RdUX2WpIxDmu0BWtBY6RTU8ALdFpub_xZEq9ts&_nc_ht=scontent.fsgn5-4.fna&oh=7e444b18b75f6dce936da9eed8f6778b&oe=5E1AD9DB", alt="")
+			figcaption
+				h5 HOÀNG VIỆT HÙNG
+		ul.list-item
+			a(href="su-kien-da-tao.html")
+				li.item Sự kiện đã tạo
+			a(href="thong-tin-tai-khoan.html")
+				li.item Thông tin tài khoản
+			a(href="#")
+				li.item Đăng xuất
+	._main-user
+		.title-catalog.wow.fadeInLeft(data-wow-delay=".3s")
+				a(href="#")
+					img.icon(src="./images/icons/add.svg", alt="", srcset="")
+				.name-catalog
+					span A . Event
+					a(href="su-kien-da-tao.html")
+						h3 Các sự kiện đã tạo
+		.row.list-sk-da-tao
+			-for(i=1;i<3;i++)
+				.col-lg-6
+					.item-event
+						figure
+							.box-img
+								img.ofc(src="./images/product/"+i+".jpg", alt="", srcset="") 
+							figcaption
+								h3 TÊN CỦA SỰ KIỆN
+								.info-event
+									.item
+										h5 Từ:
+											span 1.500.000 VND
+									.item
+										h5 Địa chỉ:
+											span Hồ Chí Minh
+									.item
+										h5 Thời gian:
+											span 12.12.2019
+									.item
+										h5 Trạng thái:
+											span Mở bán
+							.list-task
+								.item
+									a(href="#") Sửa
+								.item
+									a(href="#") Xóa

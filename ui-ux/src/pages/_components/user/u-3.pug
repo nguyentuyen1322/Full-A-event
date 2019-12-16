@@ -1,0 +1,84 @@
+section.user
+	aside
+		figure
+			.box-img
+				img.ofc(src="https://scontent.fsgn5-4.fna.fbcdn.net/v/t1.0-9/56446500_806542706382160_330506997671657472_n.jpg?_nc_cat=104&_nc_oc=AQkJPyas19gTNCr6eI_T0vLLSNDj5RdUX2WpIxDmu0BWtBY6RTU8ALdFpub_xZEq9ts&_nc_ht=scontent.fsgn5-4.fna&oh=7e444b18b75f6dce936da9eed8f6778b&oe=5E1AD9DB", alt="")
+			figcaption
+				h5 HOÀNG VIỆT HÙNG
+		ul.list-item
+			a(href="su-kien-da-tao.html")
+				li.item Sự kiện đã tạo
+			a(href="thong-tin-tai-khoan.html")
+				li.item Thông tin tài khoản
+			a(href="#")
+				li.item Đăng xuất
+	._main-user
+		.title-catalog.wow.fadeInLeft(data-wow-delay=".3s")
+				a(href="#")
+					img.icon(src="./images/icons/add.svg", alt="", srcset="")
+				.name-catalog
+					span A . Event
+					a(href="sua-thong-tin-tai-khoan.html")
+						h3 Sửa thông tin tài khoản
+		.list-info-user
+			.form-row
+				.form-group.col-lg-12
+						label(for="email") Email *
+						.form-input
+							input#email(type="text" placeholder="hoangviethung009@gmail.com")
+							span.error Bắt lỗi
+				.form-group.col-lg-12
+					label(for="user-name") Tài khoản *
+					.form-input
+						input#user-name(type="text" placeholder="hoangviethung")
+						span.error Bắt lỗi
+				.form-group.col-lg-12
+					label(for="pass") Mật khẩu cũ*
+					.form-input
+						input#pass(type="password", placeholder="Mật khẩu cũ*")
+						span.error Bắt lỗi
+				.form-group.col-lg-12
+					label(for="repass") Nhập mật khẩu mới *
+					.form-input
+						input#repass(type="password", placeholder="Nhập mật khẩu mới *")
+						span.error Bắt lỗi
+				.form-group.col-lg-12
+					label(for="repass") Nhập lại mật khẩu mới *
+					.form-input
+						input#repass(type="password", placeholder="Nhập lại mật khẩu mới *")
+						span.error Bắt lỗi
+				.form-group.col-lg-12
+					label(for="address") Số điện thoại *
+					.form-input
+						input#address(type="phone", placeholder="0969912404")
+						span.error Bắt lỗi
+				.form-group.col-lg-12
+					label(for="address") Địa chỉ
+					.form-input
+						input#address(type="text", placeholder="549/29 Nguyễn Đình Chiểu P.2 Q.3 TP Hồ Chí Minh")
+						span.error Bắt lỗi
+			.form-row
+				.form-group.col-lg-6
+					label(for="address") Ngày sinh *
+					.form-input
+						input(type="date" value="1999-09-09")
+				.form-group.col-lg-6
+					label(for="address") Giới tính *
+					.form-input
+						label.check-box(for="nam") Nam
+						input#nam(type="radio", name="gender", checked)
+						label.check-box(for="nu") Nữ
+						input#nu(type="radio", name="gender")
+				.form-group.col-lg-6
+					label.choose-file(for="file-avatar") Chọn ảnh đại diện
+					.form-input
+						input#file-avatar(type="file" hidden)
+					p Details of goods: Quantity/G.W/Goods/FileName
+				.form-group.col-lg-6
+					.form-input
+						select#vip(name="")
+							option(value="") Normal
+							option(value="") V.I.P
+			.form-row
+				.form-group.col-lg-3
+					a.btn(href="thong-tin-tai-khoan.html") Cập Nhật

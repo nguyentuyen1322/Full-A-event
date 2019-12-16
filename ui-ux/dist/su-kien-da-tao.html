@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>A Event | Sự Kiện Đã Tạo</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<style>#loading{-webkit-transition:1.5s;-o-transition:1.5s;position:fixed;top:0;right:0;bottom:0;left:0;z-index:99999;transition:1.5s;background:#000;width:100%;height:100%}#loading #progress{-webkit-transition:1.5s;-o-transition:1.5s;display:none;transition:1.5s;background:#000;width:0;height:1px}#loading #progress,#loading .progstat-wrapper{-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);position:absolute;top:50%;transform:translateY(-50%)}#loading .progstat-wrapper{margin-top:0;width:100%;color:#fff;font-size:14px;font-weight:300;letter-spacing:3px;text-align:center}#loading .logo-loader{-webkit-transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%);position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);margin-top:-100px;width:150px;height:150px}</style>
+		<script>!function(){function n(n){return document.getElementById(n)}document.addEventListener("DOMContentLoaded",function(){var e=n("loading"),t=n("progress"),o=n("progstat"),r=document.images,i=0,d=r.length;if(0==d)return u();function a(){var n=100/d*(i+=1)<<0;if(t.style.width=n,o.innerHTML=n,i===d)return u()}function u(){e.style.opacity=0,setTimeout(function(){e.style.display="none";var n=document.getElementById("loading");n.parentNode.removeChild(n)},1500)}for(var c=0;c<d;c++){var s=new Image;s.onload=a,s.onerror=a,s.src=r[c].src}},!1)}();</script>
+		<link rel="stylesheet" href="./css/core.min.css">
+		<link rel="stylesheet" href="./css/main.min.css"><link href="https://fonts.googleapis.com/css?family=K2D&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Pangolin&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<div id="loading">
+			<div class="logo-loader"><img src="./images/icons/loading.gif" alt=""></div>
+			<div class="progstat-wrapper">Loading: <span id="progstat">0</span>%</div>
+			<div id="progress"></div>
+		</div>
+		<header>
+			<div class="container">
+				<div class="row">
+					<div class="left-menu">
+						<div class="logo"><a href="index.html"><img src="./images/logo.png" alt=""></a></div>
+					</div>
+					<div class="add-event"><a href="form-dang-sk.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25" class="sc-ckVGcZ cRPCZL"><g fill="none" fill-rule="evenodd"><circle id="oval-plus" class="sc-dxgOiQ kSEybs" stroke-width="2" cx="12" cy="12" r="11"></circle><path d="M6,12 L18,12" id="Line" class="sc-dxgOiQ kSEybs" stroke-width="2" stroke-linecap="square"></path><path d="M12,6 L12,18" id="Line2" class="sc-dxgOiQ kSEybs" stroke-width="2" stroke-linecap="square"></path></g></svg><span>ADD A EVENT</span></a></div>
+					<div class="right-menu">
+						<div class="button-login"></div>
+						<div class="avatar">
+							<figure>
+								<div class="box-img"><img class="ofc" src="https://scontent.fsgn5-4.fna.fbcdn.net/v/t1.0-9/56446500_806542706382160_330506997671657472_n.jpg?_nc_cat=104&amp;_nc_oc=AQkJPyas19gTNCr6eI_T0vLLSNDj5RdUX2WpIxDmu0BWtBY6RTU8ALdFpub_xZEq9ts&amp;_nc_ht=scontent.fsgn5-4.fna&amp;oh=7e444b18b75f6dce936da9eed8f6778b&amp;oe=5E1AD9DB" alt=""></div>
+								<figcaption>
+									<h5>HOÀNG VIỆT HÙNG</h5>
+								</figcaption>
+							</figure>
+							<div id="sub-information">
+								<div class="close"><svg width="26" height="24" xmlns="http://www.w3.org/2000/svg"><g><rect fill="none" id="canvas_background" height="26" width="28" y="-1" x="-1"/></g><g><path fill="#91918e" stroke="null" id="svg_2" d="m13.475695,0.194444c-6.483507,0 -11.788195,5.304688 -11.788195,11.788195c0,6.483507 5.304688,11.788195 11.788195,11.788195s11.788195,-5.304688 11.788195,-11.788195c0,-6.483507 -5.304688,-11.788195 -11.788195,-11.788195zm5.776215,15.914063l-1.650347,1.650347l-4.125868,-4.125868l-4.125868,4.125868l-1.650347,-1.650347l4.125868,-4.125868l-4.125868,-4.125868l1.650347,-1.650347l4.125868,4.125868l4.125868,-4.125868l1.650347,1.650347l-4.125868,4.125868l4.125868,4.125868z"/></g></svg></div>
+								<figure>
+									<div class="box-img"><img class="ofc" src="https://scontent.fsgn5-4.fna.fbcdn.net/v/t1.0-9/56446500_806542706382160_330506997671657472_n.jpg?_nc_cat=104&amp;_nc_oc=AQkJPyas19gTNCr6eI_T0vLLSNDj5RdUX2WpIxDmu0BWtBY6RTU8ALdFpub_xZEq9ts&amp;_nc_ht=scontent.fsgn5-4.fna&amp;oh=7e444b18b75f6dce936da9eed8f6778b&amp;oe=5E1AD9DB" alt=""></div>
+									<figcaption>
+										<h5>HOÀNG VIỆT HÙNG<span>V.I.P</span></h5><a href="#">Logout</a>
+									</figcaption>
+								</figure>
+								<ul class="list-item"><a href="form-dang-sk.html">
+										<li class="item">Thêm sự kiện mới</li></a><a href="su-kien-da-tao.html">
+										<li class="item">Sự kiện đã tạo</li></a><a href="thong-tin-tai-khoan.html">
+										<li class="item">Thông tin tài khoản</li></a><a href="#">
+										<li class="item">Đăng xuất</li></a></ul>
+							</div>
+						</div>
+						<div class="button-search"><a href="tim-kiem.html"><svg width="26" height="26" xmlns="http://www.w3.org/2000/svg"><g><rect fill="none" id="canvas_background" height="28" width="28" y="-1" x="-1"/></g><g><g stroke="null" id="svg_8"><path fill="#ffffff" stroke="null" id="svg_4" d="m23.537278,25.717651c-0.574281,0 -1.148562,-0.255236 -1.595225,-0.63809l-7.018988,-7.018988c-0.255236,-0.255236 -0.255236,-0.63809 0,-0.893326s0.63809,-0.255236 0.893326,0l7.018988,7.018988c0.382854,0.382854 1.020944,0.382854 1.339989,0c0.382854,-0.382854 0.382854,-1.020944 0,-1.339989l-7.018988,-7.018988c-0.255236,-0.255236 -0.255236,-0.63809 0,-0.893326s0.63809,-0.255236 0.893326,0l7.018988,7.018988c0.893326,0.893326 0.893326,2.297123 0,3.190449c-0.382854,0.319045 -0.957135,0.574281 -1.531416,0.574281z"/><g stroke="null" id="svg_7"><path fill="#ffffff" stroke="null" id="svg_2" d="m10.073583,19.911034c-5.423763,0 -9.826583,-4.40282 -9.826583,-9.826583s4.40282,-9.890392 9.826583,-9.890392s9.890392,4.466629 9.890392,9.890392c0,0.765708 -0.063809,1.531416 -0.255236,2.297123c-0.063809,0.319045 -0.446663,0.574281 -0.765708,0.446663c-0.319045,-0.063809 -0.574281,-0.446663 -0.446663,-0.765708c0.127618,-0.63809 0.255236,-1.27618 0.255236,-1.978078c0,-4.721865 -3.828539,-8.614213 -8.614213,-8.614213s-8.614213,3.892348 -8.614213,8.614213s3.828539,8.614213 8.614213,8.614213c0.701899,0 1.339989,-0.063809 2.041887,-0.255236c0.319045,-0.063809 0.701899,0.127618 0.765708,0.446663c0.063809,0.319045 -0.127618,0.701899 -0.446663,0.765708c-0.829517,0.191427 -1.595225,0.255236 -2.424741,0.255236z"/><path fill="#ffffff" stroke="null" id="svg_6" d="m10.073583,17.422483c-4.019966,0 -7.338033,-3.318067 -7.338033,-7.338033s3.318067,-7.338033 7.338033,-7.338033s7.338033,3.318067 7.338033,7.338033s-3.254258,7.338033 -7.338033,7.338033zm0,-13.399886c-3.318067,0 -6.061853,2.743786 -6.061853,6.061853s2.743786,6.061853 6.061853,6.061853s6.061853,-2.743786 6.061853,-6.061853s-2.679977,-6.061853 -6.061853,-6.061853z"/></g></g></g></svg></a></div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main>
+			<section class="user">
+				<aside>
+					<figure>
+						<div class="box-img"><img class="ofc" src="https://scontent.fsgn5-4.fna.fbcdn.net/v/t1.0-9/56446500_806542706382160_330506997671657472_n.jpg?_nc_cat=104&amp;_nc_oc=AQkJPyas19gTNCr6eI_T0vLLSNDj5RdUX2WpIxDmu0BWtBY6RTU8ALdFpub_xZEq9ts&amp;_nc_ht=scontent.fsgn5-4.fna&amp;oh=7e444b18b75f6dce936da9eed8f6778b&amp;oe=5E1AD9DB" alt=""></div>
+						<figcaption>
+							<h5>HOÀNG VIỆT HÙNG</h5>
+						</figcaption>
+					</figure>
+					<ul class="list-item"><a href="su-kien-da-tao.html">
+							<li class="item">Sự kiện đã tạo</li></a><a href="thong-tin-tai-khoan.html">
+							<li class="item">Thông tin tài khoản</li></a><a href="#">
+							<li class="item">Đăng xuất</li></a></ul>
+				</aside>
+				<div class="_main-user">
+					<div class="title-catalog wow fadeInLeft" data-wow-delay=".3s"><a href="#"><img class="icon" src="./images/icons/add.svg" alt="" srcset=""></a>
+						<div class="name-catalog"><span>A . Event</span><a href="su-kien-da-tao.html">
+								<h3>Các sự kiện đã tạo</h3></a></div>
+					</div>
+					<div class="row list-sk-da-tao">
+						<div class="col-lg-6">
+							<div class="item-event">
+								<figure>
+									<div class="box-img"><img class="ofc" src="./images/product/1.jpg" alt="" srcset=""></div>
+									<figcaption>
+										<h3>TÊN CỦA SỰ KIỆN</h3>
+										<div class="info-event">
+											<div class="item">
+												<h5>Từ:<span>1.500.000 VND</span></h5>
+											</div>
+											<div class="item">
+												<h5>Địa chỉ:<span>Hồ Chí Minh</span></h5>
+											</div>
+											<div class="item">
+												<h5>Thời gian:<span>12.12.2019</span></h5>
+											</div>
+											<div class="item">
+												<h5>Trạng thái:<span>Mở bán</span></h5>
+											</div>
+										</div>
+									</figcaption>
+									<div class="list-task">
+										<div class="item"><a href="#">Sửa</a></div>
+										<div class="item"><a href="#">Xóa</a></div>
+									</div>
+								</figure>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="item-event">
+								<figure>
+									<div class="box-img"><img class="ofc" src="./images/product/2.jpg" alt="" srcset=""></div>
+									<figcaption>
+										<h3>TÊN CỦA SỰ KIỆN</h3>
+										<div class="info-event">
+											<div class="item">
+												<h5>Từ:<span>1.500.000 VND</span></h5>
+											</div>
+											<div class="item">
+												<h5>Địa chỉ:<span>Hồ Chí Minh</span></h5>
+											</div>
+											<div class="item">
+												<h5>Thời gian:<span>12.12.2019</span></h5>
+											</div>
+											<div class="item">
+												<h5>Trạng thái:<span>Mở bán</span></h5>
+											</div>
+										</div>
+									</figcaption>
+									<div class="list-task">
+										<div class="item"><a href="#">Sửa</a></div>
+										<div class="item"><a href="#">Xóa</a></div>
+									</div>
+								</figure>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer>
+			<div class="container">
+				<div class="row list-info-company">
+					<div class="col-lg-6">
+						<h5>HOGASH STUDIOS</h5>
+						<p>Were a full-service digital agency that believes being a Favorite brand is more valuable than just being a Famous one. We craft beautifully useful, connected ecosystems that grow businesses and build enduring relationships between brands and humans.</p>
+					</div>
+					<div class="col-lg-2 col-md-4">
+						<h5>COMPANY</h5>
+						<ul class="list-item-footer">
+							<li class="item-footer"><a href="#">Our Blog</a></li>
+							<li class="item-footer"><a href="#">Instagram</a></li>
+							<li class="item-footer"><a href="#">Snapchat</a></li>
+							<li class="item-footer"><a href="#">Facebook</a></li>
+							<li class="item-footer"><a href="#">Twitter</a></li>
+							<li class="item-footer"><a href="#">Dribbble</a></li>
+						</ul>
+					</div>
+					<div class="col-lg-2 col-md-4">
+						<h5>MEMBER</h5>
+						<ul class="list-item-footer">
+							<li class="item-footer"><a href="#">Home</a></li>
+							<li class="item-footer"><a href="#">About</a></li>
+							<li class="item-footer"><a href="#">Pricing</a></li>
+							<li class="item-footer"><a href="#">Blog</a></li>
+							<li class="item-footer"><a href="#">Services</a></li>
+							<li class="item-footer"><a href="#">Shop</a></li>
+						</ul>
+					</div>
+					<div class="col-lg-2 col-md-4">
+						<h5>FOLLOW</h5>
+						<ul class="list-item-footer">
+							<li class="item-footer"><a href="#">Account</a></li>
+							<li class="item-footer"><a href="#">Billing</a></li>
+							<li class="item-footer"><a href="#">Membership</a></li>
+							<li class="item-footer"><a href="#">Receipt</a></li>
+							<li class="item-footer"><a href="#">Invoice</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="coppy-right">
+					<h3>@ 2020 <a href="https://www.facebook.com/hoangviet.hung.009"><span>A EVENT | ALL COPYRIGHT BY A EVENT</span></a></h3>
+					<p>This is Project of Hùng, Tuyến, Huy, Sơn.</p>
+				</div>
+			</div>
+		</footer>
+		<div id="fb-root"></div>
+		<script>
+			window.fbAsyncInit = function() {
+			FB.init({
+			xfbml            : true,
+			version          : 'v4.0'
+			});
+			};
+			(function(d, s, id) {
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id)) return;
+			js = d.createElement(s); js.id = id;
+			js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+			fjs.parentNode.insertBefore(js, fjs);
+			}(document, 'script', 'facebook-jssdk'));
+		</script>
+		<div class="fb-customerchat" attribution="setup_tool" page_id="117903549608295" theme_color="#ffc300" logged_in_greeting="A Event xin chào, chúng tôi giúp gì được cho bạn ?" logged_out_greeting="A Event xin chào, chúng tôi giúp gì được cho bạn ?"></div>
+		<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?&amp;key=AIzaSyCHvmyTralDp2Y0m7zEiN185u1vtArcC5s&amp;libraries=places"></script>
+		<script type="text/javascript" src="./js/core.min.js"></script>
+		<script type="text/javascript" src="./js/main.min.js"></script>
+	</body>
+</html>
